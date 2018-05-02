@@ -1,4 +1,4 @@
-{% set version = '0.2.0' %}
+{% set version = '0.3.0' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,9 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/viridisLite_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/viridisLite/viridisLite_{{ version }}.tar.gz
-
-
-  sha256: 2d4d909f21c51e720bd685f05041ba158294e0a4064e0946d0bd916709818694
+  sha256: 780ea12e7c4024d5ba9029f3a107321c74b8d6d9165262f6e64b79e00aa0c2af
 
 build:
   number: 0
@@ -56,3 +54,4 @@ about:
 extra:
   recipe-maintainers:
     - croth1
+    - roryk
