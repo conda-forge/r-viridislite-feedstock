@@ -1,4 +1,4 @@
-{% set version = '0.3.0' %}
+{% set version = "0.4.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/viridisLite_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/viridisLite/viridisLite_{{ version }}.tar.gz
-  sha256: 780ea12e7c4024d5ba9029f3a107321c74b8d6d9165262f6e64b79e00aa0c2af
+  sha256: 849955dc8ad9bc52bdc50ed4867fd92a510696fc8294e6971efa018437c83c6a
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1003
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -37,16 +37,9 @@ test:
 about:
   home: https://github.com/sjmgarnier/viridisLite
   license: MIT
-  summary: "Implementation of the 'viridis' - the default -, 'magma', 'plasma',  'inferno', and
-    'cividis' color maps for 'R'. 'viridis', 'magma', 'plasma',  and 'inferno' are ported
-    from 'matplotlib' <http://matplotlib.org/>, a  popular plotting library for 'python'.
-    'cividis', was developed by Jamie R.  Nu\xF1ez and Sean M. Colby. These color maps
-    are designed in such a way that  they will analytically be perfectly perceptually-uniform,
-    both in regular  form and also when converted to black-and-white. They are also
-    designed to  be perceived by readers with the most common form of color blindness
-    (all  color maps in this package) and color vision deficiency ('cividis' only).
-    \ This is the 'lite' version of the more complete 'viridis' package that can  be
-    found at <https://cran.r-project.org/package=viridis>."
+  summary: Implementation of the 'viridis' - the default -, 'magma', 'plasma',  'inferno', and 'cividis' color maps for 'R'. 'viridis', 'magma', 'plasma',  and 'inferno' are ported from 'matplotlib' <http://matplotlib.org/>, a  popular plotting library for 'python'. 'cividis', was developed by Jamie R.  Nuñez and Sean M.
+    Colby. These color maps are designed in such a way that  they will analytically be perfectly perceptually-uniform, both in regular  form and also when converted to black-and-white. They are also designed to  be perceived by readers with the most common form of color blindness (all  color maps in this package) and color
+    vision deficiency ('cividis' only).  This is the 'lite' version of the more complete 'viridis' package that can  be found at <https://cran.r-project.org/package=viridis>.
   license_family: MIT
   license_file: LICENSE
 
