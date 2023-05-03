@@ -1,4 +1,4 @@
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/viridisLite_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/viridisLite/viridisLite_{{ version }}.tar.gz
-  sha256: a896db1ccae5fc1a8b3764d02f24cef74ef7a8341cf9f3401c4efe799870ea97
+  sha256: 893f111d31deccd2cc959bc9db7ba2ce9020a2dd1b9c1c009587e449c4cce1a1
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
