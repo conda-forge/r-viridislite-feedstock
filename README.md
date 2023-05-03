@@ -1,11 +1,11 @@
-About r-viridislite
-===================
+About r-viridislite-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-viridislite-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/sjmgarnier/viridisLite
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-viridislite-feedstock/blob/main/LICENSE.txt)
 
 Summary: Implementation of the 'viridis' - the default -, 'magma', 'plasma',  'inferno', and 'cividis' color maps for 'R'. 'viridis', 'magma', 'plasma',  and 'inferno' are ported from 'matplotlib' <http://matplotlib.org/>, a  popular plotting library for 'python'. 'cividis', was developed by Jamie R.  Nuñez and Sean M. Colby. These color maps are designed in such a way that  they will analytically be perfectly perceptually-uniform, both in regular  form and also when converted to black-and-white. They are also designed to  be perceived by readers with the most common form of color blindness (all  color maps in this package) and color vision deficiency ('cividis' only).  This is the 'lite' version of the more complete 'viridis' package that can  be found at <https://cran.r-project.org/package=viridis>.
 
